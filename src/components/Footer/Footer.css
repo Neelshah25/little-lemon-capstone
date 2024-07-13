@@ -1,0 +1,108 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap'); */
+
+/* 
+    font-family: 'Karla', sans-serif;
+*/
+
+/* 
+        font-family: 'Markazi Text', serif;
+*/
+
+.app__footer {
+  /* background-color: #EDEFEE; */
+  /* background-color: rgb(237, 239, 238); */
+  background-color: #495e57;
+  font-family: "Markazi Text", serif;
+  /* color: white; */
+}
+
+.app__footer-section {
+  /* display: grid;
+    grid-template-columns: repeat(4, auto); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  color: #495e57;
+}
+
+.app__about-image-box {
+  width: 290px;
+  height: 380px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.app__footer-items {
+  margin-top: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.app__footer-item-title {
+  font-family: karla, "Markazi Text", serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.app__footer-item-names {
+  font-family: "Karla", sans-serif;
+  /* font-size: 20px; */
+  color: rgb(255, 255, 255);
+  list-style-type: none;
+}
+
+.app__footer-item-names > li {
+  margin-top: 7px;
+}
+.app__footer-item-names > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333333;
+  color: rgb(255, 255, 255);
+  font-weight: none;
+}
+
+.Copyright {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Karla", sans-serif;
+
+  a {
+    text-decoration: underline;
+    line-height: 150%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .app__footer-section {
+    flex-direction: column;
+    gap: 0;
+  }
+  .app__footer-items {
+    margin-top: 10;
+  }
+  .app__footer-item-title {
+    font-size: 28px;
+  }
+  .app__about-image-box {
+    display: none;
+  }
+
+  .app__footer-item-names > li > a {
+    font-size: 18px;
+  }
+}

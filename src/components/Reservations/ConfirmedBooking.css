@@ -1,0 +1,105 @@
+.booking-confirmed {
+  /* margin-top: 100px; */
+
+  /* width: 66%; */
+  height: auto;
+  min-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.3rem;
+  /* margin-top: 12.8rem; */
+
+  > button {
+    max-width: 400px;
+  }
+
+  @media (max-width: 1120px) {
+    width: 90%;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 9rem;
+  }
+
+  .booking-confirmed-heading {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* margin-top: 100px; */
+
+    h1 {
+      font-family: "Markazi Text", serif;
+      font-size: 64px;
+      font-weight: 500;
+    }
+
+    h3 {
+      font-family: Karla, sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    @media (max-width: 840px) {
+      flex-direction: column;
+
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+
+  .Confirmation {
+    display: grid;
+    width: 100%;
+    max-width: 400px;
+    gap: 20px;
+    font-size: 1.8rem;
+    color: #ffffff;
+    background-color: #495e57;
+    padding: 2rem;
+    border-radius: 1.6rem;
+
+    h2 {
+      color: #f4ce14;
+      font-family: "Markazi Text", serif;
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    span {
+      text-transform: capitalize;
+      font-family: Karla, sans-serif;
+      font-size: 18px;
+    }
+  }
+
+  .goHome {
+    width: 100%;
+    height: 50px;
+    border-radius: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: #000000;
+    background-color: #f4ce14;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0 1.3rem;
+    font-family: Karla, sans-serif;
+
+    :active {
+      box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
